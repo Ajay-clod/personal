@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-play and Loop Audio</title>
+    <style>
+        button{
+            margin: 350px 700px;
+            padding: 20px 20px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <button id="annoying" onclick="startAudio()">
+    Do not click</button>
+    
+
+<script>
+    var audio = new Audio();
+    var bool = false;
+    audio.src = '../static/audio.mp3'; // Replace with the path to your audio file
+    audio.loop = true;
+
+    function startAudio(){
+        bool = !bool;
+        if (bool == true){
+            audio.play();
+            document.getElementById("annoying").innerHTML = "PLEASE MAKE IT STOP";
+
+        }
+        else{
+            audio.pause();
+            audio.currentTime = 0;
+            document.getElementById("annoying").innerHTML = "Thank you";
+
+            
+        }
+    }
+    
+    
+</script>
+
+</body>
+</html>
