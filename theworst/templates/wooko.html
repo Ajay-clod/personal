@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooko</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Wooko</h1>
+    <p>Click the button below to play the wav file</p>
+    
+    <button id="annoying" onclick="startAudio()">Click me</button>
+
+    <script>
+        var audio = new Audio();
+    var bool = false;
+    audio.src = '../static/dad.wav'; // Replace with the path to your audio file
+    audio.loop = true;
+
+    function startAudio(){
+        bool = !bool;
+        if (bool == true){
+            audio.play();
+            document.getElementById("annoying").innerHTML = "Pause";
+
+        }
+        else{
+            audio.pause();
+            document.getElementById("annoying").innerHTML = "Play";
+
+
+        }
+    }
+    </script>
+</body>
+</html>
