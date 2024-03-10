@@ -2,7 +2,7 @@
 let xp = 0;
 let Maxhealth = 100;
 let currentHealth = Maxhealth;
-let gold = 100;
+let gold = 3000;
 let currentWeapon = 0;
 let fighting;
 let monsterHealth;
@@ -38,6 +38,7 @@ const weapons = [
 var goldAudio = new Audio('gold.wav');
 var shopAudio = new Audio('shop.wav');
 shopAudio.loop = true;
+
 
 //HTML RETRIEVAL
 const button1 = document.querySelector('#button1');
@@ -98,8 +99,8 @@ function update(location) {
 
 
 function goStore() {
-  shopAudio.play();
   update(locations[1]);
+  shopAudio.play();
 }
 
 function buyHealth() {
@@ -248,5 +249,4 @@ function fightSlime() {
 function fightBeast() {
 
 }
-
 
