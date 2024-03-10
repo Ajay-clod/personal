@@ -1,16 +1,16 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #3498db; /* Updated to a lighter blue color */
-  color: #ecf0f1; /* Updated to a light gray color */
+  background-image: url('wood.jpg'); /* Replace 'wood_texture.jpg' with your actual wood texture image */
+  background-repeat: repeat; /* Repeat the background image */
+  color: #ecf0f1;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* 100% of the viewport height */
+  height: 100vh;
 }
-
 .attributes {
   text-align: center;
 }
