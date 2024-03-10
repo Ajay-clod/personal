@@ -1,13 +1,33 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: blue;
+  color: white;
 
+}
+
+#health {
+  color: red;
+}
+
+#gold {
+  color: gold;
+}
+
+#experience {
+  color: silver;
+}
+
+#inventoryList {
+  color: brown;
+}
+
+#currentWeapon {
+  color: pink;
 }
 
 div {
   margin-bottom: 20px;
 }
 
-#text {
-  font-size: 20px;
-}
+
