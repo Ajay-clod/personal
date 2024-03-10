@@ -36,7 +36,8 @@ const weapons = [
 
 //AUDIO
 var goldAudio = new Audio('gold.wav');
-
+var shopAudio = new Audio('shop.wav');
+shopAudio.loop = true;
 
 //HTML RETRIEVAL
 const button1 = document.querySelector('#button1');
@@ -97,6 +98,7 @@ function update(location) {
 
 
 function goStore() {
+  shopAudio.play();
   update(locations[1]);
 }
 
@@ -225,6 +227,8 @@ function buyWeapon() {
 }
 
 function goTown() {
+  shopAudio.pause();
+  shopAudio.currentTime = 0;
   update(locations[0]);
   console.log("Going to town.");
 }
