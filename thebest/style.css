@@ -3,6 +3,7 @@ html {
   width: 100%;
   background-color: blue;
   color: white;
+  font-size: 20px;
 
 }
 
@@ -31,6 +32,4 @@ div {
 }
 
 
-#text {
-  font-size: 20px;
-}
+
